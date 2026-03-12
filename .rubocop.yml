@@ -3,6 +3,10 @@ inherit_from: .rubocop_todo.yml
 plugins:
   - rubocop-rake
 
+inherit_mode:
+  merge:
+    - Exclude
+
 AllCops:
   NewCops: enable
   Exclude:
